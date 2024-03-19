@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:tasbih/controller/appcontroller.dart';
 import 'package:tasbih/data/datasave.dart';
 import 'package:tasbih/function/imagechange.dart';
 import 'package:tasbih/screen/settingpage.dart';
@@ -25,7 +27,7 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: const Text('Tasbih (تسبيح)'),
+        title: Text('Tasbih '),
         actions: [
           IconButton(
             icon: const Icon(Icons.settings),
@@ -67,7 +69,7 @@ class _HomePageState extends State<HomePage> {
       padding: const EdgeInsets.symmetric(horizontal: 50),
       child: MaterialButton(
         onPressed: () {
-          if (Platform.isAndroid) {
+          if (Platform.isAndroid && getVibration() == true) {
             Vibration.vibrate(
               duration: 50,
               amplitude: 50,
@@ -93,22 +95,24 @@ class _HomePageState extends State<HomePage> {
   }
 
   _topimage() {
-    return Column(
+    return GetBuilder<AppController>(
+      init: AppController(),
+      initState: (controller) {},
+      builder: (controller) {
+        return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         GestureDetector(
           onTap: () {
-            if (Platform.isAndroid) {
+            if (Platform.isAndroid && getVibration() == true) {
               Vibration.vibrate(
                 duration: 50,
                 amplitude: 50,
               );
             }
-            setState(() {
-              count++;
-              saveCount(count);
-            });
+             count++;
+              controller.changeCount(count);
           },
           child: Image.asset(
             imageChange(count),
@@ -119,17 +123,17 @@ class _HomePageState extends State<HomePage> {
         const SizedBox(
           height: 20,
         ),
-        StatefulBuilder(builder: (context, setState) {
-          return Text(
-            getCount().toString(),
-            style: const TextStyle(
-              fontSize: 30,
-              fontWeight: FontWeight.bold,
-            ),
-            textAlign: TextAlign.center,
-          );
-        }),
+        Text(
+          getCount().toString(),
+          style: const TextStyle(
+            fontSize: 30,
+            fontWeight: FontWeight.bold,
+          ),
+          textAlign: TextAlign.center,
+        ),
       ],
+    );
+      },
     );
   }
 }
@@ -149,7 +153,7 @@ _zekir() {
       SizedBox(
         height: 20,
       ),
-     Align(
+      Align(
         child: Text(
           "سُبْحَانَ ٱللَّٰهِ",
           textAlign: TextAlign.right,
