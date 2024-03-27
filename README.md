@@ -7,8 +7,8 @@
 <h2>Project Screenshots:</h2>
 
 <p align="center">
-   <img src="assets/unop_1.png](https://github.com/MehediHasannOvi/Tasbih/blob/main/Screenshot_20240327-185723_Tasbih%20(%D8%AA%D8%B3%D8%A8%D9%8A%D8%AD).png?raw=true)" width="150" height="300">
-   <img src="assets/unop_2.png](https://github.com/MehediHasannOvi/Tasbih/blob/main/Screenshot_20240327-185730_Tasbih%20(%D8%AA%D8%B3%D8%A8%D9%8A%D8%AD).png?raw=true)" width="150" height="300">
+   <img src="image1.png" width="150" height="300">
+   <img src="image2.png" width="150" height="300">
 <!--    <img src="assets/unop_5.png" width="150" height="300">
    <img src="assets/unop_3.png" width="150" height="300">
    <img src="assets/unop_4.png" width="150" height="300"> -->
