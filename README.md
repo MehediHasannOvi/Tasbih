@@ -1,16 +1,60 @@
-# tasbih
+<h1 align="center" id="title">Tasbih</h1>
 
-A new Flutter project.
+<p id="description">Tasbih is a devout Muslim app crafted specifically for Zikr to Allah. Count your recitations effortlessly with taps or swipes. Experience gentle vibrations for tactile feedback No ads ensure an uninterrupted devotion. Save your Zikr counts offline for convenience. Let Tasbih be your companion in deepening your connection with Allah through sincere remembrance.</p>
 
-## Getting Started
+<h2>🚀 Demo</h2>
 
-This project is a starting point for a Flutter application.
+<h2>Project Screenshots:</h2>
 
-A few resources to get you started if this is your first Flutter project:
+<img src="https://github.com/MehediHasannOvi/Tasbih/blob/main/Screenshot_20240327-185723_Tasbih%20(%D8%AA%D8%B3%D8%A8%D9%8A%D8%AD).png?raw=true" alt="project-screenshot" width="360" height="580/">
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+<img src="https://github.com/MehediHasannOvi/Tasbih/blob/main/Screenshot_20240327-185730_Tasbih%20(%D8%AA%D8%B3%D8%A8%D9%8A%D8%AD).png?raw=true" alt="project-screenshot" width="360" height="580/">
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+  
+  
+<h2>🧐 Features</h2>
+
+Here're some of the project's best features:
+
+*   Hive Data Base Use
+*   when you count a Tree Grow
+*   Beginner friendly code
+
+<h2>🛠️ Installation Steps:</h2>
+
+<p>1. Clone Project</p>
+
+```
+git clone https://github.com/MehediHasannOvi/Tasbih.git
+```
+
+<p>2. Enter</p>
+
+```
+Cd Tasbih
+```
+
+<p>3. Run</p>
+
+```
+Flutter pub get
+```
+
+<p>4. Run</p>
+
+```
+Flutter run 
+```
+
+  
+  
+<h2>💻 Built with</h2>
+
+Technologies used in the project:
+
+*   Flutter
+*   Hive
+
+<h2>💖Like my work?</h2>
+
+mehedihasannovi@gmail.com
