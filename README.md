@@ -7,8 +7,8 @@
 <h2>Project Screenshots:</h2>
 
 <p align="center">
-   <img src="image1.png" width="150" height="300">
-   <img src="image2.png" width="150" height="300">
+   <img src="image1.png" width="350" height="580">
+   <img src="image2.png" width="350" height="580">
 <!--    <img src="assets/unop_5.png" width="150" height="300">
    <img src="assets/unop_3.png" width="150" height="300">
    <img src="assets/unop_4.png" width="150" height="300"> -->
